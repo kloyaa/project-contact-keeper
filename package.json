@@ -1,0 +1,36 @@
+{
+  "name": "react-contact-keeper-app",
+  "version": "1.0.0",
+  "description": "Contact keeper application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "react-app": "npm start --prefix react-app",
+    "react-app-install": "npm install --prefix react-app",
+    "dev": "concurrently \"npm run server\" \"npm run react-app\" " 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baekdusan/react-contact-keeper-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baekdusan/react-contact-keeper-app/issues"
+  },
+  "homepage": "https://github.com/baekdusan/react-contact-keeper-app#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.1",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.20"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4"
+  }
+}
